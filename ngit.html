@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="memo">"HELLO KMIT"</p>
+    <button id="hello" >check</button>
+    <script>
+        document.getElementById("hello").addEventListener("click",display);
+        function display(){
+            var a=document.createElement('p');
+            a.style.marginTop=a.style.marginBottom="1px";
+            a.innerHTML="NGIT <br> NGIT";
+            document.getElementById("memo").appendChild(a);
+        }
+    </script>
+   
+</body>
+</html>
